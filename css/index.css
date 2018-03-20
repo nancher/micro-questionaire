@@ -1,0 +1,87 @@
+div.qst-manage a {
+	position: absolute;
+	top: -30px;
+	right: 10px;
+	background-color: rgb(255, 119, 0);
+	color: white;
+	border: 1px solid rgb(238, 85, 0);
+	border-radius: 3px;
+	font-size: 0.8em;
+	cursor: pointer;
+	text-decoration: none;
+	z-index: 999;
+}
+
+
+
+div.qst-manage a span.plus {
+	font-size: 1.2em;
+	margin-right: 5px;
+}
+
+div.qst-manage a span.text {
+	font-size: 1.2em;
+}
+
+div.qst-manage table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+
+div.qst-manage table tbody tr:hover {
+	background-color: rgb(255, 240, 245);
+}
+
+
+div.qst-manage table button {
+	width: 75px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid rgb(170, 170, 170);
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+
+
+div.qst-manage table td {
+	height: 50px;
+	border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+div.qst-manage table td.first-column {
+	width: 10%;
+}
+
+div.qst-manage table td.second-column {
+	width: 30%;
+}
+
+div.qst-manage table td.third-column {
+	width: 20%;
+}
+
+div.qst-manage table td.fourth-column {
+	width: 10%;
+}
+
+div.qst-manage table td.fifth-column {
+	width: 30%;
+}
+
+#all-oper{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: none;
+}
+
+#all-oper:hover {
+	background-color: white;
+}
+
+#all-check {
+	margin-right: 30px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>调查问卷</title>
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<header>
+		<span class="help">？</span>
+		<span class="qst-man">	
+			问卷管理
+		</span>
+		<span>
+			我的问卷
+		</span>
+	</header>
+	<div class="body qst-manage">
+		<a href="qst_edit.html"><span class="plus">+</span><span class="text">新建问卷</span></a>
+		<table>
+			<thead>
+				<tr><td class="first-column"></td><td class="second-column">标题</td><td class="third-column">时间</td><td class="fourth-column">状态</td><td class="fifth-column">操作</td></tr>
+			</thead>
+			<tbody>
+				<tr><td id="all-oper"><input type="checkbox" id="all-check"><button id="all-delete">删除</button></td></tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

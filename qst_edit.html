@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>调查问卷</title>
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/qst_edit.css">
+</head>
+<body>
+	<div id="mask"></div>
+	<div id="question-init">
+		<div class="header">
+			<span id="close-btn">×</span>
+		</div>
+		<label for="question-title">
+			<input type="text" id="question-title" placeholder="请输入您的问题">
+		</label>
+		<label>
+			<input type="text" class="question-choice" placeholder="请输入选择"><span class="delete">×</span><span class="add">+</span>
+		</label>
+		<label>
+			<input type="text" class="question-choice" placeholder="请输入选择"><span class="delete">×</span><span class="add">+</span>
+		</label>
+		<button id="question-save">保存</button>
+	</div>
+	<header>
+		<span class="help">？</span>
+		<span class="qst-man">	
+			问卷管理
+		</span>
+		<span>
+			我的问卷
+		</span>
+	</header>
+	<div class="body qst-edi">
+		<div class="title">
+			<input id="questionaire-title" type="text" placeholder="这里是标题">
+		</div>
+		<div id="question-container"></div>
+		<div class="add-qst">
+			<div id="question-type">
+				<button class="question" id="radio"><img class="question" id="radio-icon" src="icon/radio.png">单选</button>
+				<button class="question" id="checkbox"><img class="question" id="checkbox-icon" src="icon/check.png">多选</button>
+				<button class="question" id="textarea"><img class="question" id="textarea-icon" src="icon/text.png">文本</button>
+			</div>
+			<div id="add-btn">
+				<div>
+					<span>+</span>添加问题
+				</div>
+			</div>
+		</div>
+		<div class="qst-set" id="create-questionaire">
+			问卷截止日期<input type="text" id="date">
+			<div id="calendar"></div>
+			<button id="save-questionaire">保存问卷</button>
+			<button id="publish-questionaire">发布问卷</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/qst_edit.js"></script>
+</body>
+</html>

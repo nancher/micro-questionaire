@@ -1,0 +1,73 @@
+body {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(230, 230, 230);
+	user-select: none;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(255, 119, 0);
+}
+
+header > span {
+	display: inline-block;
+	color: white;
+}
+
+span.help {
+	position: absolute;
+	left: 125px;
+	top: 15px;
+	width: 23px;
+	height: 23px;
+	background-color: white;
+	border-radius: 50%;
+	color: rgb(255, 119, 0);
+	font-size: 1.3em;
+	text-align: center;
+	
+}
+
+span.qst-man {
+	font-size: 1.4em;
+	margin-right: 200px;
+	margin-left: 150px;
+	margin-top: 10px;s
+}
+
+
+div.body {
+	position: relative;
+	background-color: white;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 100px;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: -3px 3px 3px #999999,
+				3px 3px 3px #999999;
+	vertical-align: middle;
+}
+
+div.header {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: rgb(255, 119, 0);
+	margin-bottom: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div.header span {
+	position: absolute;
+	font-size: 1em;
+	right: 10px;
+	top: 2px;
+	cursor: pointer;
+}
+
