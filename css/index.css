@@ -45,6 +45,12 @@ div.qst-manage table button {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 300px) {
+    div.qst-manage table button {
+    	display: block;
+    }
+}
+
 
 
 div.qst-manage table td {

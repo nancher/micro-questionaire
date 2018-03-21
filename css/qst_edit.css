@@ -1,4 +1,4 @@
-	#mask {
+#mask {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -100,6 +100,16 @@ div.add-qst {
 
 #question-type button {
 	position: relative;
+	width: 10%;
+	min-width: 70px;
+	height: 35px;
+	margin-left: 5%;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background-color: rgb(230, 230, 230);
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 3px;
+	cursor: pointer;
 }
 
 #question-type img {
@@ -107,19 +117,7 @@ div.add-qst {
 	width: 18px;
 	height: 18px;
 	top: 8px;
-	left: 25px;
-}
-
-#question-type button {
-	width: 120px;
-	height: 35px;
-	margin-left: 50px;
-	box-sizing: border-box;
-	padding-left: 20px;
-	background-color: rgb(230, 230, 230);
-	border: 1px solid rgb(170, 170, 170);
-	border-radius: 3px;
-	cursor: pointer;
+	left: 7%;
 }
 
 .question-div{
@@ -145,7 +143,7 @@ div.add-qst {
 
 .operation {
 	margin-top: 20px;
-	padding-left: 70%;
+	padding-left: 60%;
 }
 
 .operation span {
@@ -174,7 +172,6 @@ textarea {
 }
 
 #add-btn {
-	position: relative;
 	background-color: rgb(230, 230, 230);
 	width: 100%;
 	text-align: center;
@@ -186,6 +183,7 @@ textarea {
 }
 
 #add-btn > div {
+	position: relative;
 	display: inline-block;
 	cursor: pointer;
 }
@@ -193,24 +191,24 @@ textarea {
 #add-btn span {
 	position: absolute;
 	font-size: 1.8em;
-	left: 43%;
-	top: 10px;
+	left: -20px;
+	bottom: -7px;
 	color: rgb(180, 180, 180);
 }
 
 div.qst-set {
 	box-sizing: border-box;
 	margin-top: 30px;
-	padding-left: 100px;
 	position: relative;
 	color: rgb(100, 100, 100);
+	padding-left: 5%;
 }
 
 #date {
-	margin-left: 10px;
-	margin-right: 18%;
+	margin-right: 15%;
 	height: 35px;
-	width: 269px;
+	width: 20%;
+	min-width: 160px;
 	outline: none;
 	text-align: center;
 	border: 1px solid rgb(200, 200, 200);
@@ -222,8 +220,7 @@ div.qst-set {
 #calendar {
 	display: none;
 	position: absolute;
-	left: 207px;
-	top: 35px;
+	top: 60px;
 	border: 1px solid rgb(200, 200, 200);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -231,7 +228,8 @@ div.qst-set {
 
 
 div.qst-set button {
-	width: 100px;
+	width: 15%;
+	min-width: 75px;
 	height: 28px;
 	background-color: white;
 	border: 1px solid rgb(170, 170, 170);

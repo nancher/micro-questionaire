@@ -10,6 +10,15 @@ table tr td {
 	user-select: none;
 }
 
+@media screen and (max-width: 800px) {
+    table tr td {
+		width: 10px;
+		height: 10px;
+		text-align: center;
+		user-select: none;
+	}
+}
+
 tr:nth-child(n+2) td:hover {
 	border: 1px solid rgb(120, 120, 120);
 	box-sizing: border-box;
