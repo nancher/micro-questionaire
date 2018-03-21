@@ -10,7 +10,7 @@ var renderTbody = function(questionaires, questionairesName) {
 			var time = timeStr.substring(0,8) + (parseInt(timeStr.substr(-2)) + 1);
 			var str = "<td class='first-column'><input type='checkbox'></td><td class='second-column'>" + questionaires[questionairesName[i]].name + "</td><td class='third-column'>" + time + "\
 </td><td class='fourth-column'>" + questionaires[questionairesName[i]].state + "</td><td class='fifth-column'>\
-<button class='edit'>编辑</button><button class='delete'>删除</button><button>查看数据</button></td>";
+<button class='edit'>编辑</button><button class='delete'>删除</button><button class='view'>查看数据</button></td>";
 			tr.innerHTML = str;
 			tr.id = i;
 			tableBody.insertBefore(tr, lastTr)[0];
@@ -58,7 +58,7 @@ window.onload = function() {
 		}
 
 		if(target.className == "view") {
-
+			window.location.href = "qst_view.html";
 		}
 
 		if(target.id == "all-check") {

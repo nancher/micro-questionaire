@@ -230,6 +230,11 @@ var renderAnswerMap = function(result) {
 };
 
 $(function() {
+
+	$(".back").click(function () {
+		window.history.back();
+	});
+	
 	//生成10套问卷答题
 	var answers = [];
 	for(var i = 0; i < 10; i++) {
