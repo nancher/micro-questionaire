@@ -1,4 +1,4 @@
-#mask {
+	#mask {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -35,7 +35,7 @@
 }
 
 #question-init label span {
-	margin-left: 30px;
+	margin-left: 5%;
 	cursor: pointer;
 }
 
@@ -98,27 +98,16 @@ div.add-qst {
 	padding-top: 20px;
 }
 
+#question-type button {
+	position: relative;
+}
+
 #question-type img {
 	position: absolute;
 	width: 18px;
 	height: 18px;
-}
-
-img#radio-icon {
-	left: 410px;
-	top: 28px;
-}
-
-img#checkbox-icon {
-	left: 580px;
-	top: 28px;
-}
-
-img#textarea-icon {
-	left: 748px;
-	top: 27px;
-	width: 23px;
-	height: 23px;
+	top: 8px;
+	left: 25px;
 }
 
 #question-type button {
@@ -156,12 +145,12 @@ img#textarea-icon {
 
 .operation {
 	margin-top: 20px;
-	padding-left: 80%;
+	padding-left: 70%;
 }
 
 .operation span {
 	opacity: 0;
-	margin-right: 20px;
+	margin-right: 10px;
 	cursor: pointer;
 }
 
@@ -204,7 +193,7 @@ textarea {
 #add-btn span {
 	position: absolute;
 	font-size: 1.8em;
-	left: 520px;
+	left: 43%;
 	top: 10px;
 	color: rgb(180, 180, 180);
 }
@@ -219,13 +208,13 @@ div.qst-set {
 
 #date {
 	margin-left: 10px;
+	margin-right: 18%;
 	height: 35px;
 	width: 269px;
 	outline: none;
 	text-align: center;
 	border: 1px solid rgb(200, 200, 200);
 	border-radius: 3px;
-	margin-right: 400px;
 	color: rgb(100, 100, 100);
 	margin-bottom: 5px;
 }

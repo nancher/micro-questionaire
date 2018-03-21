@@ -51,6 +51,7 @@ div.body {
 	box-shadow: -3px 3px 3px #999999,
 				3px 3px 3px #999999;
 	vertical-align: middle;
+	min-width: 1000px;
 }
 
 div.header {
