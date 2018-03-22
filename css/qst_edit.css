@@ -217,6 +217,10 @@ div.qst-set {
 	margin-bottom: 5px;
 }
 
+div.deadline {
+	margin-bottom: 20px;
+}
+
 #calendar {
 	display: none;
 	position: absolute;
@@ -235,4 +239,5 @@ div.qst-set button {
 	border: 1px solid rgb(170, 170, 170);
 	color: rgb(100, 100, 100);
 	border-radius: 3px;
+	margin-bottom: 20px;
 }

@@ -191,8 +191,15 @@
 	var render = function(questionaires) {
 		var url = window.location.href;
 		if(url.indexOf("?") > -1) {
-			var param = url.split("?")[1];
-			var name = param.split("=")[1];
+			var params = url.split("?")[1].split("&");
+			var name = params[0].split("=")[1];
+			var read = params[1] ? params[1].split("=")[1] : "";
+			if(read) {
+				addQstBtn.style.display = "none";
+				document.getElementsByClassName("deadline")[0].style.display = "none";
+				publishQuestionaireBtn.style.display = "none";
+
+			}
 			var arr = questionaires[name].questions;
 			questionArr = arr;
 			var count = arr.length;
@@ -201,9 +208,11 @@
 				questionContainer.appendChild(saveQuestion(arr[i]));
 			}
 		}
+
+		return read;
 	};
 
-	render(questionaires);
+	var read = render(questionaires);
 
 
 	addListener(document.documentElement, "click", function(e) {
@@ -452,10 +461,12 @@
 			questionAnswerInit(questionArr);
 			//console.log(questionArr);
 			var questionNumber = questionArr.length;
-			for(var j = 0; j < questionNumber; j++) {
-				if(questionArr[j].require && questionArr[j].value == "") {
-					alert("第" + (j+1) + "个问题是必答问题，您尚未填写!");
-					return false;
+			if(!read) {
+				for(var j = 0; j < questionNumber; j++) {
+					if(questionArr[j].require && questionArr[j].value == "") {
+						alert("第" + (j+1) + "个问题是必答问题，您尚未填写!");
+						return false;
+					}
 				}
 			}
 

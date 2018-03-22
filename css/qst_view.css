@@ -86,7 +86,7 @@ div.view > div > div.data-view {
 }
 
 div.view > div > div.data-view .bar {
-	width: 350px;
+	width: 95%;
 	height: 10px;
 	border: 1px solid rgb(150, 150, 150);
 	margin-bottom: 20px;
