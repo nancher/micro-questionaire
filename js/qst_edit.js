@@ -200,12 +200,21 @@
 				publishQuestionaireBtn.style.display = "none";
 
 			}
-			var arr = questionaires[name].questions;
-			questionArr = arr;
-			var count = arr.length;
-			questionaireTitleInput.value = name;
-			for(var i = 0; i < count; i++) {
-				questionContainer.appendChild(saveQuestion(arr[i]));
+			if(name) {
+				var arr = questionaires[name].questions;
+				questionArr = arr;
+				var count = arr.length;
+				questionaireTitleInput.value = name;
+				for(var i = 0; i < count; i++) {
+					questionContainer.appendChild(saveQuestion(arr[i]));
+				}
+				if(read) {
+					var questions_oper = document.querySelectorAll(".operation");
+					var num = questions_oper.length;
+					for(var j = 0; j < num; j++) {
+						questions_oper[j].style.display = "none";
+					}
+				}
 			}
 		}
 
@@ -458,10 +467,12 @@
 					questionArr[id - 1].require = true;
 				}
 			}
+			console.log(1);
 			questionAnswerInit(questionArr);
 			//console.log(questionArr);
 			var questionNumber = questionArr.length;
-			if(!read) {
+			console.log(read);
+			if(read) {
 				for(var j = 0; j < questionNumber; j++) {
 					if(questionArr[j].require && questionArr[j].value == "") {
 						alert("第" + (j+1) + "个问题是必答问题，您尚未填写!");
@@ -470,11 +481,14 @@
 				}
 			}
 
-			var deadline = dateIsValid(dateIpt.value);
+			if(!read) {
+				var deadline = dateIsValid(dateIpt.value);
 
-			if(!deadline) {
-				return false;
+				if(!deadline) {
+					return false;
+				}
 			}
+
 
 			if(target.id == "save-questionaire") {
 				if(questionaires[questionaireTitle]) {
