@@ -493,7 +493,9 @@
 			if(target.id == "save-questionaire") {
 				if(questionaires[questionaireTitle]) {
 					questionaires[questionaireTitle].name = questionaireTitle;
-					questionaires[questionaireTitle].deadline = deadline;
+					if(deadline) {
+						questionaires[questionaireTitle].deadline = deadline;
+					}
 					questionaires[questionaireTitle].questions = questionArr;
 				}
 				else{
